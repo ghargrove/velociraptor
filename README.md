@@ -1,4 +1,4 @@
-velociraptor
-============
+Velociraptor CSS Library
+========================
 
-CSS Library
+This CSS library contains styles for generic buttons
