@@ -18,22 +18,30 @@
 	-webkit-border-radius: 10px;
 }
 
-@mixin drop-shadow {
-	box-shadow: 2px 2px 0px rgba(0, 0, 0, .4);
-	-moz-box-shadow: 2px 2px 0px rgba(0, 0, 0, .4);
-	-webkit-box-shadow: 2px 2px 0px rgba(0, 0, 0, .4);
+@mixin button-drop-shadow {
+	box-shadow: 2px 2px 0px rgba(0, 0, 0, .6);
+	-moz-box-shadow: 2px 2px 0px rgba(0, 0, 0, .6);
+	-webkit-box-shadow: 2px 2px 0px rgba(0, 0, 0, .6);
 }
 
-//
+@mixin text-drop-shadow {
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
+	-moz-text-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
+	-webkit-text-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
+}
+
+// Default button style
 a.vbtn, button.vbtn {
 	
-	// Include lightly rounded corners
+	// Add lightly rounded corners
 	@include light-rounded-corners;
+	// Add button drop shadow
+	@include button-drop-shadow;
+	// Add drop shadow on text
+	@include text-drop-shadow;
 
-	// Include drop shadow
-	@include drop-shadow;
-
-	font-family: verdana;
+	display: inline-block;
+	font-family: verdana, sans-serif;
 	font-size: 12px;
 	background: linear-gradient(0deg, $default-btn-bg-dark, $default-btn-bg-light);
 	border: solid 1px $default-btn-bg-dark;
@@ -41,10 +49,33 @@ a.vbtn, button.vbtn {
 	padding: 10px 15px;
 	margin:  5px;
 	text-decoration: none;
-	font-weight: bold;
+	// font-weight: bold;
 
 	&:hover {
 		background: linear-gradient(0deg, $default-btn-bg-hover, $default-btn-bg-light);
 		border: solid 1px $default-btn-bg-hover;
 	}
+}
+
+a.vbtn.blue {
+	color: $blue-btn-text-color;
+	background: linear-gradient(0deg, $blue-btn-bg-dark, $blue-btn-bg-light);
+	border: solid 1px $blue-btn-bg-dark;
+	&:hover {
+		background: linear-gradient(0deg, $blue-btn-bg-hover, $blue-btn-bg-light);
+		border: solid 1px $blue-btn-bg-hover;
+	}
+}
+
+a.vbtn.large, button.vbtn.large {
+	font-size: 16px;
+	padding: 20px 30px;
+}
+
+a.vbtn.mini, button.vbtn.mini {
+	padding: 3px 6px;
+}
+
+a.vbtn.heavy, button.vbtn.heavy {
+	font-weight: bold;
 }

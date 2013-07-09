@@ -3,25 +3,86 @@
 <head>
 	<title>Velociraptor Style Examples</title>
 	<link type="text/css" rel="stylesheet" href="css/velociraptor.css" />
+	<style type="text/css">
+		* {
+			margin: 0; padding: 0;
+		}
+		div, h1, h2, h3, p, a, button {
+			margin: 10px;
+			line-height: inherit
+		}
+		h3 {
+			margin-top: 30px;
+		}
+		p {
+			font-size: 16px;
+			line-height: 24px;
+		}
+		code {
+			display: block;
+			background-color: #EFEFEF;
+			padding: 20px;
+			margin: 10px;
+		}
+		.section {
+			border-bottom: solid 1px #A1A1A1;
+			padding-bottom: 15px;
+		}
+		#main {
+			border: solid 1px #EFEFEF; margin: 10px auto; width: 940px;
+		}
+	</style>
 </head>
 <body>
-	<div style="border: solid 1px #EFEFEF; margin: 10px auto; width: 900px;">
-		<h3>Default button</h3>
-		<hr/>
-		<p>
-			To acheive this look you should use either:<br/>
-			<code style="display: block; background-color: #EFEFEF; padding: 20px; margin: 10px 20px;">
+	<div id="main">
+
+		<div class="section">
+			<h1>CSS3 Buttons</h1>
+			<h3>Default</h3>
+			<p>To acheive this look you should use either:</p>
+			<code>
 				&lt;a class="btn"&gt;Login&lt;a&gt;
 			</code>
-			or
-			<code style="display: block; background-color: #EFEFEF; padding: 20px; margin: 10px 20px;">
+			<p>or</p>
+			<code>
 				&lt;button class="btn"&gt;Login&lt;button&gt;
 			</code>
-			<br/>
+			
 			<a href="#" class="vbtn">Login</a>
 			<button class="vbtn">Login</button>
-		</p>
+		
+			<h3>Size - mini, large, heavy</h3>
+			<p>To achieve small buttons you should use:</p>
+			<code>
+				&lt;a class="vtn mini"&gt;Mini&lt;a&gt;
+			</code>
+			<p>or</p>
+			<code>
+				&lt;button class="vbtn large"&gt;Large&lt;button&gt;
+			</code>
+			<a href="#" class="vbtn mini">Mini</a>
+			<button class="vbtn large">Large</button>
+			<p>You can also make the button text embolden by using the "heavy" class:</p>
+			<code>
+				&lt;a class="vbtn heavy"&gt;Heavy&lt;a&gt;
+			</code>
+			<a href="#" class="vbtn heavy">Heavy</a>
+		</div>
+
+		<div class="section">
+			<h3>Blue</h3>
+			<p>You can make a button blue by adding the "blue" class:</p>
+			<code>
+				&lt;a class="btn blue"&gt;Blue&lt;a&gt;
+			</code>
+			<a href="#" class="vbtn blue">Blue</a>
+			<a href="#" class="vbtn blue heavy">Blue - Heavy</a>
+			<a href="#" class="vbtn blue large">Blue - Large</a>
+			<a href="#" class="vbtn blue mini">Blue - Mini</a>
+
+		</div>
+
 	</div>
-	
+
 </body>
 </html>
