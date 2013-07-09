@@ -19,9 +19,9 @@
 }
 
 @mixin button-drop-shadow {
-	box-shadow: 2px 2px 0px rgba(0, 0, 0, .6);
-	-moz-box-shadow: 2px 2px 0px rgba(0, 0, 0, .6);
-	-webkit-box-shadow: 2px 2px 0px rgba(0, 0, 0, .6);
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 2px 2px 1px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 2px 2px 1px rgba(0, 0, 0, .8);
 }
 
 @mixin text-drop-shadow {
@@ -76,6 +76,16 @@ a.vbtn.red, button.vbtn.red {
 	&:hover {
 		background: linear-gradient(0deg, $red-btn-bg-hover, $red-btn-bg-light);
 		border: solid 1px $red-btn-bg-hover;
+	}
+}
+
+a.vbtn.green, button.vbtn.green {
+	color: $green-btn-text-color;
+	background: linear-gradient(0deg, $green-btn-bg-dark, $green-btn-bg-light);
+	border: solid 1px $green-btn-bg-dark;
+	&:hover {
+		background: linear-gradient(0deg, $green-btn-bg-hover, $green-btn-bg-light);
+		border: solid 1px $green-btn-bg-hover;
 	}
 }
 
