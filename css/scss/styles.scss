@@ -18,9 +18,21 @@
 	-webkit-border-radius: 10px;
 }
 
+@mixin drop-shadow {
+	box-shadow: 2px 2px 0px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 2px 2px 0px rgba(0, 0, 0, .4);
+	-webkit-box-shadow: 2px 2px 0px rgba(0, 0, 0, .4);
+}
+
+//
 a.vbtn, button.vbtn {
 	
+	// Include lightly rounded corners
 	@include light-rounded-corners;
+
+	// Include drop shadow
+	@include drop-shadow;
+
 	font-family: verdana;
 	font-size: 12px;
 	background: linear-gradient(0deg, $default-btn-bg-dark, $default-btn-bg-light);

@@ -2,6 +2,9 @@ a.vbtn, button.vbtn {
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
   font-family: verdana;
   font-size: 12px;
   background: linear-gradient(0deg, #c2c2c2, #e5e5e5);
