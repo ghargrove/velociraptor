@@ -21,13 +21,21 @@ a.vbtn, button.vbtn {
     background: linear-gradient(0deg, #b2b2b2, #e5e5e5);
     border: solid 1px #b2b2b2; }
 
-a.vbtn.blue {
+a.vbtn.blue, button.vbtn.blue {
   color: #1a3a4a;
   background: linear-gradient(0deg, #4ca8d6, #5ac8ff);
   border: solid 1px #4ca8d6; }
-  a.vbtn.blue:hover {
+  a.vbtn.blue:hover, button.vbtn.blue:hover {
     background: linear-gradient(0deg, #469ac4, #5ac8ff);
     border: solid 1px #469ac4; }
+
+a.vbtn.red, button.vbtn.red {
+  color: #190300;
+  background: linear-gradient(0deg, #bf1200, #ff1700);
+  border: solid 1px #bf1200; }
+  a.vbtn.red:hover, button.vbtn.red:hover {
+    background: linear-gradient(0deg, #a60f00, #ff1700);
+    border: solid 1px #a60f00; }
 
 a.vbtn.large, button.vbtn.large {
   font-size: 16px;

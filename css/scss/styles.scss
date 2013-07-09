@@ -57,13 +57,25 @@ a.vbtn, button.vbtn {
 	}
 }
 
-a.vbtn.blue {
+// Update background, border & text colors for blue button
+a.vbtn.blue, button.vbtn.blue {
 	color: $blue-btn-text-color;
 	background: linear-gradient(0deg, $blue-btn-bg-dark, $blue-btn-bg-light);
 	border: solid 1px $blue-btn-bg-dark;
 	&:hover {
 		background: linear-gradient(0deg, $blue-btn-bg-hover, $blue-btn-bg-light);
 		border: solid 1px $blue-btn-bg-hover;
+	}
+}
+
+// Update background, border & text colors for red button
+a.vbtn.red, button.vbtn.red {
+	color: $red-btn-text-color;
+	background: linear-gradient(0deg, $red-btn-bg-dark, $red-btn-bg-light);
+	border: solid 1px $red-btn-bg-dark;
+	&:hover {
+		background: linear-gradient(0deg, $red-btn-bg-hover, $red-btn-bg-light);
+		border: solid 1px $red-btn-bg-hover;
 	}
 }
 
