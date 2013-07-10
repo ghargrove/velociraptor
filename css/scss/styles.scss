@@ -60,11 +60,12 @@ a.vbtn, button.vbtn {
 // Update background, border & text colors for blue button
 a.vbtn.blue, button.vbtn.blue {
 	color: $blue-btn-text-color;
-	background: linear-gradient(0deg, $blue-btn-bg-dark, $blue-btn-bg-light);
+	background: linear-gradient(0deg, $blue-btn-bg-dark, $blue-btn-bg-light 50%);
 	border: solid 1px $blue-btn-bg-dark;
 	&:hover {
-		background: linear-gradient(0deg, $blue-btn-bg-hover, $blue-btn-bg-light);
+		background: linear-gradient(0deg, $blue-btn-bg-hover, $blue-btn-bg-light 50%);
 		border: solid 1px $blue-btn-bg-hover;
+		color: $blue-btn-text-color-hover;
 	}
 }
 
