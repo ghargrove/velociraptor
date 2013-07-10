@@ -1,7 +1,7 @@
 a.vbtn, button.vbtn {
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
@@ -20,6 +20,16 @@ a.vbtn, button.vbtn {
   a.vbtn:hover, button.vbtn:hover {
     background: linear-gradient(0deg, #b2b2b2, #e5e5e5);
     border: solid 1px #b2b2b2; }
+
+a.vbtn.less-round, button.vbtn.less-round {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px; }
+
+a.vbtn.more-round, button.vbtn.more-round {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
 
 a.vbtn.blue, button.vbtn.blue {
   color: #0c1d24;

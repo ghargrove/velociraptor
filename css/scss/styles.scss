@@ -34,7 +34,7 @@
 a.vbtn, button.vbtn {
 	
 	// Add lightly rounded corners
-	@include light-rounded-corners;
+	@include medium-rounded-corners;
 	// Add button drop shadow
 	@include button-drop-shadow;
 	// Add drop shadow on text
@@ -55,6 +55,14 @@ a.vbtn, button.vbtn {
 		background: linear-gradient(0deg, $default-btn-bg-hover, $default-btn-bg-light);
 		border: solid 1px $default-btn-bg-hover;
 	}
+}
+
+a.vbtn.less-round, button.vbtn.less-round {
+	@include light-rounded-corners;
+}
+
+a.vbtn.more-round, button.vbtn.more-round {
+	@include heavy-rounded-corners;
 }
 
 // Update background, border & text colors for blue button
