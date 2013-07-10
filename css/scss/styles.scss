@@ -69,6 +69,13 @@ a.vbtn.blue, button.vbtn.blue {
 	}
 }
 
+a.vbtn.blue.flat, button.vbtn.blue.flat {
+	background: $blue-btn-bg-light;
+	&:hover {
+		background: $blue-btn-bg-dark;
+	}
+}
+
 // Update background, border & text colors for red button
 a.vbtn.red, button.vbtn.red {
 	color: $red-btn-text-color;

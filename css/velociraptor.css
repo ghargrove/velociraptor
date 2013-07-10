@@ -30,6 +30,11 @@ a.vbtn.blue, button.vbtn.blue {
     border: solid 1px #3a92b2;
     color: #081217; }
 
+a.vbtn.blue.flat, button.vbtn.blue.flat {
+  background: #53d0ff; }
+  a.vbtn.blue.flat:hover, button.vbtn.blue.flat:hover {
+    background: #3e9cbf; }
+
 a.vbtn.red, button.vbtn.red {
   color: #190300;
   background: linear-gradient(0deg, #bf1200, #ff1700);
