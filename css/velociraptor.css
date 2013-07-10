@@ -36,12 +36,18 @@ a.vbtn.blue.flat, button.vbtn.blue.flat {
     background: #3e9cbf; }
 
 a.vbtn.red, button.vbtn.red {
-  color: #190300;
-  background: linear-gradient(0deg, #bf1200, #ff1700);
-  border: solid 1px #bf1200; }
+  color: #360b08;
+  background: linear-gradient(0deg, #b0231a, #ff3326 50%);
+  border: solid 1px #b0231a; }
   a.vbtn.red:hover, button.vbtn.red:hover {
-    background: linear-gradient(0deg, #a60f00, #ff1700);
-    border: solid 1px #a60f00; }
+    background: linear-gradient(0deg, #a32119, #ff3326 50%);
+    border: solid 1px #a32119;
+    color: #1f0605; }
+
+a.vbtn.red.flat, button.vbtn.red.flat {
+  background: #ff3326; }
+  a.vbtn.red.flat:hover, button.vbtn.red.flat:hover {
+    background: #b0231a; }
 
 a.vbtn.green, button.vbtn.green {
   color: #02570a;

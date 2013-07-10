@@ -79,11 +79,19 @@ a.vbtn.blue.flat, button.vbtn.blue.flat {
 // Update background, border & text colors for red button
 a.vbtn.red, button.vbtn.red {
 	color: $red-btn-text-color;
-	background: linear-gradient(0deg, $red-btn-bg-dark, $red-btn-bg-light);
+	background: linear-gradient(0deg, $red-btn-bg-dark, $red-btn-bg-light 50%);
 	border: solid 1px $red-btn-bg-dark;
 	&:hover {
-		background: linear-gradient(0deg, $red-btn-bg-hover, $red-btn-bg-light);
+		background: linear-gradient(0deg, $red-btn-bg-hover, $red-btn-bg-light 50%);
 		border: solid 1px $red-btn-bg-hover;
+		color: $red-btn-text-color-hover;
+	}
+}
+
+a.vbtn.red.flat, button.vbtn.red.flat {
+	background: $red-btn-bg-light;
+	&:hover {
+		background: $red-btn-bg-dark;
 	}
 }
 
